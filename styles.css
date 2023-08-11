@@ -9,7 +9,7 @@
 } */
 
 :root {
-  --font-primary: 'Inter', sans-serif;
+  --font-primary: "Inter", sans-serif;
   --fs-bold: 700;
   --fs-extra-bold: 800;
   --fs-regular: 400;
@@ -19,14 +19,13 @@
   --btn-color: #ff6b6b;
 }
 
-
 body {
   font-family: var(--font-primary);
   overflow-x: hidden;
 }
 
 .wrapper {
-   width: 90%;
+  width: 90%;
   margin: 0 auto;
   /*padding: 1em 0;*/
   min-height: 100vh;
@@ -47,7 +46,6 @@ img {
   object-fit: cover;
 }
 
-
 .main-nav {
   display: flex;
   /* border: 2px solid firebrick; */
@@ -62,10 +60,8 @@ img {
   gap: 2em;
   margin: 0;
 
-  --nav-link-hover: rgb(0 150 255 / .8);
+  --nav-link-hover: rgb(0 150 255 / 0.8);
 }
-
-
 
 .nav_list li {
   list-style: none;
@@ -101,7 +97,6 @@ img {
   margin: 1em 0;
   gap: 2em;
   /*border: 2px solid firebrick;*/
-  
 }
 
 .col-two .intro-text {
@@ -113,7 +108,6 @@ img {
 /* .col-two .featured-card-text {
   border: 2px solid green;
 } */
-
 
 .col-two .title {
   font-size: 3rem;
@@ -153,7 +147,6 @@ img {
   font-size: 2rem;
   align-self: flex-start;
   margin-left: 0.5em;
-  
 }
 
 .sidebar .aside-sub-title {
@@ -188,7 +181,7 @@ img {
 .act-as-footer :is(.number) {
   font-size: 2rem;
   margin: 0 0 0.2em;
-  color: var(--text-light-dark);
+  color: var(--_text-light-dark);
 }
 
 .act-as-footer :is(.sub-title) {
@@ -201,54 +194,55 @@ img {
 
 /*Hide close btn*/
 .close-btn {
-   display: none;
-  }
+  display: none;
+}
 
 .menu-btn {
-   display: none;
-  }
+  display: none;
+}
 
-  .menu-btn {
-     display: none;
-     cursor: pointer;
-    }
-  
-  /* Media queries for smaller screens */
-   @media only screen  and (max-width: 1173px) {
+.menu-btn {
+  display: none;
+  cursor: pointer;
+}
+
+/* Media queries for smaller screens */
+@media only screen and (max-width: 1173px) {
   .main {
     column-gap: revert;
   }
   .main .sidebar {
     grid-column: span 4;
   }
-  
+
   .main .featured {
-  grid-column: 1 / -1;
-}
+    grid-column: 1 / -1;
+  }
 }
 
-@media only screen  and (max-width: 711px) {
+@media only screen and (max-width: 711px) {
   .main {
     column-gap: 2em;
   }
   .main .sidebar {
     grid-column: revert;
   }
-  
+
   .main .featured {
-  grid-column: revert;
-}
+    grid-column: revert;
+  }
 }
 
-  @media screen and (max-width: 710px) {
-    
-    .main-nav {
-      position: relative;
-    }
-    .nav_list {
+@media screen and (max-width: 710px) {
+  .main-nav {
+    position: relative;
+  }
+  .nav_list {
+    --_text-light-dark: #868e96;
+
     position: absolute;
     background-color: #fff;
-    box-shadow: 3px 3px 10px rgb(0 0 0 / .5);
+    box-shadow: 3px 3px 10px rgb(0 0 0 / 0.5);
     display: block !important;
     right: 0;
     top: 0;
@@ -258,7 +252,6 @@ img {
     text-align: center;
     /* Custom property */
     transition: transform 500ms;
-    --text-light-dark: #868e96;
     transform: translateX(120%);
     z-index: 999;
     position: fixed;
@@ -287,7 +280,6 @@ img {
     background-color: #f1f3f5;
   }
 
-
   .close-btn {
     display: revert;
     text-align: left;
@@ -295,9 +287,9 @@ img {
   }
 
   .close {
-   width: 1.5em;
-   cursor: pointer;
-   transition: color 500ms;
+    width: 1.5em;
+    cursor: pointer;
+    transition: color 500ms;
   }
 
   .close:hover {
@@ -307,18 +299,18 @@ img {
   .menu-btn {
     display: block;
     transition: scale 700ms;
-   }
+  }
 
-   .menu-btn:hover {
+  .menu-btn:hover {
     scale: 1.1;
-   }
-   
-   .menu-btn:hover path {
-     fill: var(--btn-color);
-   }
+  }
 
-   /* take spanning away */
-   .main .featured {
+  .menu-btn:hover path {
+    fill: var(--btn-color);
+  }
+
+  /* take spanning away */
+  .main .featured {
     grid-column: revert;
     grid-row: revert;
   }
@@ -341,12 +333,9 @@ img {
     margin-bottom: 1em;
     line-height: 1.7;
   }
-  
 }
 
-
-
-@media only screen  and (min-width: 1174px) {
+@media only screen and (min-width: 1174px) {
   .main .sidebar {
     grid-column: revert;
   }
@@ -366,7 +355,6 @@ img {
   }
 } */
 
-
 /*Finally the attribution*/
 .attribution {
   display: flex;
@@ -377,7 +365,7 @@ img {
   text-align: center;
 }
 
-.attribution  a {
+.attribution a {
   text-decoration: none;
   color: var(--btn-color);
   transition: text-decoration 1000ms;
