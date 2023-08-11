@@ -181,7 +181,7 @@ img {
 .act-as-footer :is(.number) {
   font-size: 2rem;
   margin: 0 0 0.2em;
-  color: var(--_text-light-dark);
+  color: var(--text-light-dark);
 }
 
 .act-as-footer :is(.sub-title) {
